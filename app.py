@@ -7,6 +7,14 @@ IMG_PATH=""
 def index():
     return render_template("index.html")
 
+@app.route("/Login.html", methods=['GET'])
+def Login(): 
+    return render_template("Login.html")
+
+@app.route("/cart.html", methods=['GET'])
+def cart(): 
+    return render_template("cart.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
 
