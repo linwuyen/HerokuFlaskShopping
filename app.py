@@ -1,13 +1,11 @@
 from flask import Flask
-app=Flask(__name__)
+
+app = Flask(__name__)
 
 @app.route("/")
-def home():
-    return "hello flask"
 
-@app.route("/test")
-def test():
-    return "this is test"
+def index():
+    return "hello world"
 
-if __name__=="__name__":
-    app.run()
+if __name__ == "__main__":
+    app.run(debug=True)
