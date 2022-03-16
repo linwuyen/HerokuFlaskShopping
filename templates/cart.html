@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>購物車</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!--icon-->
+    <script
+      src="https://kit.fontawesome.com/bd4320b0ac.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--nav-->
+    <link rel="stylesheet" type="text/css" href="style/nav.css" />
+    <!--footer-->
+    <link rel="stylesheet" type="text/css" href="style/footer.css" />
+    <!--products style-->
+    <style>
+      .products_container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .products {
+        width: 700px;
+        height: 200px;
+        border: 2px solid #8888;
+        border-radius: 2px;
+        margin: 20px;
+        display: flex;
+      }
+      .products img {
+        width: 50%;
+      }
+      .products-items {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .products-items h3 {
+        font-size: 30px;
+        font-weight: 700;
+        width: 150px;
+        padding: 10px;
+        text-align: center;
+        box-sizing: border-box;
+      }
+      .products-items p {
+        font-size: 25px;
+        font-weight: 700;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .products-items button {
+        margin: 30px;
+        padding: 10px;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <!--nav-->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <a href="index.html">LOGO</a>
+        </div>
+        <ul class="nav-item">
+          <li>
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i> 購物車
+              <span>0</span></a
+            >
+          </li>
+          <li><a href="#">註冊</a></li>
+          <li><a href="Login.html">登入</a></li>
+          <li><a href="#">會員中心</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="products_container">
+      <div class="products bag">
+        <img src="./imges/black-bag-over-the-shoulder.jpg" alt="" />
+        <div class="products-items">
+          <h3>bag</h3>
+          <p>100</p>
+          <button>BUY</button>
+        </div>
+      </div>
+      <div class="products makeup">
+        <img src="./imges/makeup-and-jewelry.jpg" alt="" />
+        <div class="products-items">
+          <h3>makeup</h3>
+          <p>100</p>
+          <button>BUY</button>
+        </div>
+      </div>
+      <div class="products cake">
+        <img src="./imges/colorful-fruit-and-custard-tart.jpg" alt="" />
+        <div class="products-items">
+          <h3>cake</h3>
+          <p>5</p>
+          <button>BUY</button>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer-container"></div>
+    <script src="./cart.js"></script>
+  </body>
+</html>

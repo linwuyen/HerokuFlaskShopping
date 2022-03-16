@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>歡迎登入</title>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!--icon-->
+    <script src="https://kit.fontawesome.com/bd4320b0ac.js" crossorigin="anonymous"></script>
+    <!--nav-->
+    <link rel="stylesheet" type="text/css" href="style/nav.css">
+    <!--footer-->
+    <link rel="stylesheet" type="text/css" href="style/footer.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Sans TC', sans-serif;
+      }
+      /*login*/
+      .container {
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        margin: 100px auto;
+      }
+      .banner {
+        background-color: #e7b89a;
+        width: 70%;
+        display: flex;
+        padding: 100px;
+        margin: 20px;
+        justify-content: center;
+      }
+      .banner .txt {
+        margin: auto;
+        color: #244a62;
+        display: flex;
+        flex-direction: column;
+        
+      }
+      .banner .txt h1{
+        font-size: 60px;
+        font-weight: 900;
+      }
+      .banner .txt h4{
+        align-self: flex-end;
+        width: 300px;
+        text-align: end;
+        font-size: 20px;
+        font-weight: 700;
+        border-top:10px solid #244a62;
+        
+      }
+      .form {
+        width: 30%;
+        height: 460px;
+        display: flex;
+        flex-direction: column;
+        margin: auto 20px;
+        border: 2px solid #ccc;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .form .item {
+        margin:auto;
+        align-self: center;
+      }
+      .item {
+        display: flex;
+        flex-direction: column;
+      }
+      .item label {
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: -15px;
+      }
+      #login {
+        align-self: flex-end;
+        padding: 5px;
+        border-radius: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <!--nav-->
+        <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.html">LOGO</a>
+            </div>
+            <ul class="nav-item">
+                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i> 購物車</a></li>
+                <li><a href="#">註冊</a></li>
+                <li><a href="Login.html">登入</a></li>
+                <li><a href="#">會員中心</a></li>
+            </ul>
+        </div>
+        </nav>
+<!--login-->
+    <div class="container">
+      <div class="banner">
+        <div class="txt">
+          <h1>SHOPPING GO</h1>
+          <br>
+          <h4>開始你的購物之旅</h4>
+        </div>
+      </div>
+        <div class="form">
+          <div class="item">
+            <label>email
+              <br />
+              <input type="text" id="email" />
+            </label>
+            
+            <br />
+            <label>password
+              <br />
+              <input type="text" id="password" />
+          </label>
+            <br />
+            <input type="submit" value="login" id="login" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer-container"></div>
+  </body>
+</html>
